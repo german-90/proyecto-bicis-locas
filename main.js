@@ -5,17 +5,20 @@ function validateForm() {
   let correo = $("#input-email").val();
   let contrasena = $("#input-password").val();
   let seleccion = $("#input-social").val();
-  if ((name == 0) && (apellido == 0) && (correo == 0) && (contrasena == 0)) {
-    alert("campos deben ser llenados")
-  }
-  else if (((name.lenght < 3) || (name.lenght > 8)) && ((apellido.lenght < 3) || (apellido.lenght > 8))) {
+ 
+  
+   if (name.length < 3 || name.length > 8  ) {
 
-    alert("campos nombre, apellido  deben ser mayores a 3")
+    alert("campos nombre  deben ser mayores a 3")
   }
-  else if (contrasena.lenght < 6) {
+  else if (apellido.length < 3 || apellido.length > 8) {
+    alert("campos  apellido  deben ser mayores a 3")
+
+  }
+  else if (contrasena.length < 6) {
     alert("contrasena debe ser mayor a 6")
 
   }
-
+  
 
 }
